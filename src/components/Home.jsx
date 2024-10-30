@@ -1,5 +1,4 @@
 import React from 'react'
-import {MdKeyboardArrowRight} from "react-icons/md";
 import HeroImage from '../assets/profile-picture.jpg'
 import {Link} from 'react-scroll'
 
@@ -19,7 +18,8 @@ const Home = () => {
 
                 <div>
                 <Link to="portfolio" smooth duration={500} className='group text-white w-fit px-4 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'> Portfolio 
-                    <span className='group-hover:rotate-90 duration-300'><MdKeyboardArrowRight />
+                    <span className='group-hover:rotate-90 duration-300'> <i className="fa-solid fa-greater-than"></i>
+
                     </span>
                 </Link>
                 </div>

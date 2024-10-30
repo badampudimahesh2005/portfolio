@@ -1,33 +1,30 @@
 import React from 'react'
 
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
-import { HiOutlineMail } from 'react-icons/hi'
-import { BsFillPersonLinesFill } from 'react-icons/bs'
 
 const SocialLinks = () => {
 
     const links =[
         {
           id:1,
-          child:(<>LinkedIn <FaLinkedin size={30} /></>),
+          child:(<>LinkedIn <i className="fa-brands fa-linkedin text-3xl"></i></>),
           url:"https://www.linkedin.com/in/maheshbadampudi/",
           style:'rounded-tr-md'
         },
         {
             id:2,
-            child:(<>GitHub <FaGithub size={30} /></>),
+            child:(<>GitHub <i className="fa-brands fa-github text-3xl"></i></>),
             url:"https://github.com/badampudimahesh2005"
         },
       
         {
             id:3,
-            child:(<>Mail <HiOutlineMail size={30} /></>),
+            child:(<>Mail <i className="fa-solid fa-envelope text-3xl"></i></>),
             url:"mailto:maheshbadampudi32@gmail.com"
         },
        
         {
             id:4,
-            child:(<>Resume <BsFillPersonLinesFill size={30} /></>),
+            child:(<>Resume<i className="fa-solid fa-briefcase text-3xl"></i> </>),
             url:"/portfolio.pdf",
             style:'rounded-br-md',
             download:true

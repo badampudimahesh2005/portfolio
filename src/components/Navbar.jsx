@@ -1,7 +1,7 @@
 import React from 'react'
-import { FaBars, FaTimes } from 'react-icons/fa'
 import { useState } from 'react'
 import {Link} from 'react-scroll'
+
 
 const Navbar = () => {
 
@@ -36,6 +36,7 @@ const Navbar = () => {
     <div className='flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed' >
         <div>
             <h1 className='text-5xl font-signature ml-2'>Mahesh</h1>
+            
         </div>
         <ul className='hidden md:flex'>
             {links.map(({id,link}) => (
@@ -49,7 +50,7 @@ const Navbar = () => {
         </ul>
     
         <div  onClick={()=>{setIsOpen(!isOpen)}} className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden">
-            {isOpen?<FaTimes className='' size={30} />:<FaBars className='' size={30}/>}
+            {isOpen ? <i className="fa-solid fa-xmark text-3xl"></i> : <i className="fa-solid fa-bars text-3xl"></i>}
         </div>
 
         {isOpen && ( <ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black  to-gray-800 text-gray-500'>
