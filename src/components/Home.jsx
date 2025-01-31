@@ -89,7 +89,7 @@ const Home = () => {
 
         {/* Right Side - Image */}
         <motion.div
-          className='mt-8 md:mt-0 md:ml-8 lg:ml-28' 
+          className='mt-4 mb-6 md:mt-0 md:ml-8 lg:ml-28' 
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
