@@ -69,7 +69,7 @@ const Portfolio = () => {
         </motion.div>
 
         {/* Portfolio Grid */}
-        <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
+        <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-6 sm:px-0'>
           {portfolios.map(({ id, image, title, demo, code }) => (
             <motion.div
               key={id}
@@ -83,7 +83,7 @@ const Portfolio = () => {
               <img
                 src={image}
                 alt={title}
-                className='rounded-lg w-full h-48 object-cover group-hover:scale-105 duration-200'
+                className='rounded-lg w-full h-48 object-contain group-hover:scale-105 duration-200'
               />
 
               {/* Overlay with Project Details */}
